@@ -1,0 +1,33 @@
+#1)Game of "Functions"
+##Write a Python function to sum all the numbers in a list.
+def sum(numbers):
+    total = 0
+    for i in numbers:
+        total += i
+    return total
+a=(8, 2, 3, 0, 7)
+print(sum(a))
+
+#2)String inside the function
+#Write a Python program to reverse a string.
+def reverse(string):
+    string = "".join(reversed(string))
+    return string
+s = "1234abcd"
+print(reverse(s))
+
+#3)Calculate the Upper and The lower Case
+##Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+def U_L_testing(s):
+    d={"UPPER_CASE":0, "LOWER_CASE":0}
+    for i in s:
+        if i.isupper():
+            d["UPPER_CASE"]+=1
+        elif i.islower():
+            d["LOWER_CASE"]+=1
+        else:
+            pass
+    print ("No. of Upper case characters: ", d["UPPER_CASE"])
+    print ("No. of Lower case Characters: ", d["LOWER_CASE"])
+s=input()
+U_L_testing(s)
